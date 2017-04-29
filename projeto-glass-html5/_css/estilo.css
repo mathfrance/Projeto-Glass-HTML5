@@ -123,3 +123,26 @@ nav#menu a:hover {
     color: white;
     text-decoration: underline;
 }
+
+section#corpo {
+    display: block;
+    width: 700px;
+    float: left;
+    border-right: 1px solid #606060;
+    padding-right: 25px;
+}
+
+aside#lateral {
+    display: block;
+    width: 500px;
+    float: right;
+}
+
+footer#rodape {
+    clear: both;
+    border-top: 1px solid #606060;
+}
+
+p#rodapeparagrafo {
+    text-align: center;
+}
