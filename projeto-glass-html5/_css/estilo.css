@@ -1,11 +1,12 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 @font-face {
-    font-family: : "FonteLogo";
-    src: ("../_fonts/bubblegum-sans-regular.otf");
+    font-family: "FonteLogo";
+    src: url("../_fonts/bubblegum-sans-regular.otf");
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background-color: gray;
     color: rgba(0, 0, 0, 1);
 }
@@ -23,6 +24,15 @@ p {
     text-indent: 50px;
 }
 
+a {
+    color: #606060;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 header#cabecalho img#icone {
     position: absolute;
     left: 1130px;
@@ -36,7 +46,7 @@ header#cabecalho {
 }
 
 header#cabecalho h1 {
-    font-family: 'FonteLogo';
+    font-family: "FonteLogo";
     font: 30pt;
     color: #606060;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, .6);
@@ -132,10 +142,99 @@ section#corpo {
     padding-right: 25px;
 }
 
+article#noticia-principal h2 {
+    font-size: 12pt;
+    color: gray;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 10px;
+    margin: 10px 0px 10px 0px;
+}
+
+header#cabecalho-artigo h1 {
+    font-family: "FonteLogo", sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+header#cabecalho-artigo h2 {
+    font-size: 13pt;
+    color: #cecece;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+header#cabecalho-artigo h3 {
+    font-size: 12px;
+    color: #606060;
+}
+
+.data-direita {
+    text-align: right;
+}
+
+table#tabelaspec {
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table#tabelaspec td {
+    border: 1px solid #606060;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+table#tabelaspec td.ce {
+    color: white;
+    background-color: #606060;
+    vertical-align: top;
+    font-weight: bold;
+}
+
+table#tabelaspec td.cd {
+    background-color: #cecece;
+}
+
+table#tabelaspec caption {
+    color: #888888;
+    font-size: 13pt;
+    font-weight: bolder;
+}
+
+table#tabelaspec caption span {
+    display: block;
+    float: right;
+    color: #000000;
+    font-size: 8pt;
+    margin-top: 10px;
+}
+
 aside#lateral {
     display: block;
     width: 500px;
     float: right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .5)
+}
+
+aside#lateral h1 {
+    font-family: "FonteLogo", sans-serif;
+    font-size: 20pt;
+    color: #606060;
+    margin-top: 0px;
+}
+
+aside#lateral h2 {
+    background-color: #606060;
+    font-size: 12pt;
+    color: #ffffff;
+    padding: 5px;
 }
 
 footer#rodape {
@@ -143,6 +242,6 @@ footer#rodape {
     border-top: 1px solid #606060;
 }
 
-p#rodapeparagrafo {
+footer#rodape p {
     text-align: center;
 }
